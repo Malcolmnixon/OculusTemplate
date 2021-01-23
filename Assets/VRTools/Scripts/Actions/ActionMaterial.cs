@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class ActionMaterial : MonoBehaviour
 {
+    [Tooltip("Target object to set material on")]
+    public GameObject target;
+
     [Tooltip("New material to set when activated")]
     public Material newMaterial;
 
@@ -9,16 +12,18 @@ public class ActionMaterial : MonoBehaviour
 
     private void Start()
     {
-        _originalMaterial = GetComponent<Renderer>().material;
+        if (target == null) target = gameObject;
+
+        _originalMaterial = target.GetComponent<Renderer>().material;
     }
 
     public void SetMaterial()
     {
-        GetComponent<Renderer>().material = newMaterial;
+        target.GetComponent<Renderer>().material = newMaterial;
     }
 
     public void RestoreMaterial()
     {
-        GetComponent<Renderer>().material = _originalMaterial;
+        target.GetComponent<Renderer>().material = _originalMaterial;
     }
 }
