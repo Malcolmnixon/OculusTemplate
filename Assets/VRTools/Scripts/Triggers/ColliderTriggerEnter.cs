@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TriggerEnter : MonoBehaviour
+public class ColliderTriggerEnter : MonoBehaviour
 {
-    public UnityEvent onEnter;
-
     public string filter;
+
+    public UnityEvent onEnter;
 
     private void OnTriggerEnter(Collider c)
     {
