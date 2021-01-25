@@ -308,7 +308,7 @@ public class OVRGrabber : MonoBehaviour
 
             // NOTE: This is to get around having to setup collision layers, but in your own project you might
             // choose to remove this line in favor of your own collision layer setup.
-            // SetPlayerIgnoreCollision(m_grabbedObj.gameObject, true);
+            //SetPlayerIgnoreCollision(m_grabbedObj.gameObject, true);
 
             if (m_parentHeldObject)
             {
