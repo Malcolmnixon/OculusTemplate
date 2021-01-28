@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VRTools/Scenes/ProBuilderScene.unity
-    guid: eb95b57bf48c35a46be125192b190acd
+    path: Assets/VRTools/Scenes/SpaceScene.unity
+    guid: c76be0d5a0ff16b42a099d046ebe07ed
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 57350ebabb42aab40baa24f4d55eaae0,
       type: 2}
