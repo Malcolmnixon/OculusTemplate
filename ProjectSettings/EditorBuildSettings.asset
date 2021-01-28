@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/VRTools/Scenes/ProBuilderScene.unity
+    guid: eb95b57bf48c35a46be125192b190acd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 57350ebabb42aab40baa24f4d55eaae0,
       type: 2}
